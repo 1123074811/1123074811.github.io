@@ -1,0 +1,200 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>哈基聪的博客 | 哈基聪的博客</title><meta name="author" content="哈基聪"><meta name="copyright" content="哈基聪"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="plaintext    Access to video at ‘https:&#x2F;&#x2F;iblog-file.oss-cn-beijing.aliyuncs.com&#x2F;xxx.mp4‘ from origin ‘http:&#x2F;&#x2F;localhost:5173‘ has been blocked by CORS policy: No ‘Access-Control-Allow-Origin’ header is">
+<meta property="og:type" content="article">
+<meta property="og:title" content="哈基聪的博客">
+<meta property="og:url" content="http://example.com/2026/03/09/%E8%A7%A3%E5%86%B3OSS%E5%89%8D%E7%AB%AF%E8%A7%86%E9%A2%91CORS%E6%8A%A5%E9%94%99/index.html">
+<meta property="og:site_name" content="哈基聪的博客">
+<meta property="og:description" content="plaintext    Access to video at ‘https:&#x2F;&#x2F;iblog-file.oss-cn-beijing.aliyuncs.com&#x2F;xxx.mp4‘ from origin ‘http:&#x2F;&#x2F;localhost:5173‘ has been blocked by CORS policy: No ‘Access-Control-Allow-Origin’ header is">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/avatar.jpg">
+<meta property="article:published_time" content="2026-03-09T07:54:19.956Z">
+<meta property="article:modified_time" content="2026-03-09T07:55:39.608Z">
+<meta property="article:author" content="哈基聪">
+<meta property="article:tag" content="哈基聪, 博客, 个人网站">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/avatar.jpg"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "",
+  "url": "http://example.com/2026/03/09/%E8%A7%A3%E5%86%B3OSS%E5%89%8D%E7%AB%AF%E8%A7%86%E9%A2%91CORS%E6%8A%A5%E9%94%99/",
+  "image": "http://example.com/img/avatar.jpg",
+  "datePublished": "2026-03-09T07:54:19.956Z",
+  "dateModified": "2026-03-09T07:55:39.608Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "哈基聪",
+      "url": "http://example.com"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2026/03/09/%E8%A7%A3%E5%86%B3OSS%E5%89%8D%E7%AB%AF%E8%A7%86%E9%A2%91CORS%E6%8A%A5%E9%94%99/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.1"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.12.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '哈基聪的博客',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 8.1.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">8</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(/img/bg.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">哈基聪的博客</span></a><a class="nav-page-title" href="/"><span class="site-name">哈基聪的博客</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">无标题</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2026-03-09T07:54:19.956Z" title="发表于 2026-03-09 15:54:19">2026-03-09</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2026-03-09T07:55:39.608Z" title="更新于 2026-03-09 15:55:39">2026-03-09</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><p>plaintext<br>    Access to video at ‘<a target="_blank" rel="noopener" href="https://iblog-file.oss-cn-beijing.aliyuncs.com/xxx.mp4">https://iblog-file.oss-cn-beijing.aliyuncs.com/xxx.mp4</a>‘ from origin ‘<a target="_blank" rel="noopener" href="http://localhost:5173/">http://localhost:5173</a>‘ has been blocked by CORS policy: No ‘Access-Control-Allow-Origin’ header is present on the requested resource.<br>&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;</p>
+<p>这说明：前端页面（<code>http://localhost:5173</code>）试图访问阿里云 OSS 上的视频资源时，由于 OSS 未配置允许该域名的跨域规则，浏览器出于安全限制阻止了访问，导致视频无法回显。</p>
+<h3 id="二、解决方法：配置-OSS-跨域规则"><a href="#二、解决方法：配置-OSS-跨域规则" class="headerlink" title="二、解决方法：配置 OSS 跨域规则"></a>二、解决方法：配置 OSS 跨域规则</h3><p>需要登录阿里云 OSS 控制台，为存储视频的 Bucket 配置跨域访问规则，允许前端域名（如<code>http://localhost:5173</code>）访问资源。</p>
+<h4 id="具体步骤："><a href="#具体步骤：" class="headerlink" title="具体步骤："></a>具体步骤：</h4><ol>
+<li><p><strong>登录阿里云</strong> <strong>OSS</strong> <strong>控制台</strong>进入 <a target="_blank" rel="noopener" href="https://oss.console.aliyun.com/">阿里云 OSS 管理控制台</a>，找到你的 Bucket（如<code>iblog-file</code>）。</p>
+</li>
+<li><p><strong>进入跨域设置</strong>在 Bucket 左侧菜单中，找到「权限管理」→「跨域资源共享（CORS）」，点击「创建规则」。</p>
+</li>
+<li><p><strong>配置跨域规则</strong>按以下内容填写（根据你的实际情况调整）：</p>
+<ol>
+<li><p><strong>来源（Origin）</strong>：允许访问的前端域名，开发环境填 <code>http://localhost:5173</code>，生产环境填你的网站域名（如<code>https://xxx.com</code>），也可临时用 <code>*</code> 允许所有域名（不推荐生产环境）。</p>
+</li>
+<li><p><strong>允许 Methods</strong>：至少勾选 <code>GET</code>（视频播放需要）、<code>PUT</code>、<code>POST</code>（上传可能需要）。</p>
+</li>
+<li><p><strong>允许 Headers</strong>：填 <code>*</code>（允许所有请求头）。</p>
+</li>
+<li><p><strong>暴露 Headers</strong>：填 <code>ETag</code>（可选，根据需要添加）。</p>
+</li>
+<li><p><strong>Max-Age（秒）</strong>：建议设为 <code>3600</code>（缓存 1 小时，减少重复验证）。</p>
+</li>
+</ol>
+</li>
+<li><p><strong>保存规则</strong>点击「确定」完成配置，生效时间约 1-2 分钟。</p>
+</li>
+</ol>
+<p><img src="https://fcnna21u6sem.feishu.cn/space/api/box/stream/download/asynccode/?code=NzI4ZDYyNjM5ZjI2NjM2ZDM3M2E5ZTliYWJiMjRmNjdfaEVLUGtZaVUzU2xMWk00MjNPSHBoMDVtMnI2RU53b0RfVG9rZW46WENlZWJyZEV5b2F0WVV4dVVOb2NMYjQ2bnZiXzE3NzMwNDI5MzE6MTc3MzA0NjUzMV9WNA"></p>
+<h3 id="三、其他可能的辅助调整"><a href="#三、其他可能的辅助调整" class="headerlink" title="三、其他可能的辅助调整"></a>三、其他可能的辅助调整</h3><ol>
+<li><p><strong>检查视频 URL 是否正确</strong>确认前端<code>form.video</code>存储的是 OSS 返回的完整 URL（如<code>https://bucketName.endpoint/文件名</code>），可在控制台打印<code>form.video</code>的值验证。</p>
+</li>
+<li><p><strong>富文本编辑器高度警告</strong>控制台提示「编辑区域高度 &lt; 300px 可能导致定位异常」，建议调整编辑器高度：</p>
+</li>
+<li><p>css</p>
+<p> &#x2F;* 在样式中增加 <em>&#x2F;:deep(.w-e-text-container) {height: 400px !important; &#x2F;</em> 确保高度 ≥ 300px *&#x2F;}</p>
+</li>
+<li><p><strong>Vue 组件事件警告</strong>关于<code>updateAccount</code>事件的警告不影响视频回显，可忽略或在对应组件中通过<code>emits</code>声明自定义事件消除警告。</p>
+</li>
+</ol>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>视频回显失败的根本原因是 OSS 跨域配置缺失，优先配置 OSS 的 CORS 规则允许前端域名访问。配置完成后，浏览器将允许加载 OSS 上的视频资源，回显功能即可正常工作。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://example.com">哈基聪</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2026/03/09/%E8%A7%A3%E5%86%B3OSS%E5%89%8D%E7%AB%AF%E8%A7%86%E9%A2%91CORS%E6%8A%A5%E9%94%99/">http://example.com/2026/03/09/%E8%A7%A3%E5%86%B3OSS%E5%89%8D%E7%AB%AF%E8%A7%86%E9%A2%91CORS%E6%8A%A5%E9%94%99/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="http://example.com" target="_blank">哈基聪的博客</a>！</span></div></div><div class="tag_share"><div class="post-share"><div class="social-share" data-image="/img/avatar.jpg" data-sites="facebook,x,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/2026/03/09/redis%E8%BF%9C%E7%A8%8B%E8%AE%BF%E9%97%AE%E5%BC%80%E6%94%BE%E9%98%B2%E7%81%AB%E5%A2%99%E7%AB%AF%E5%8F%A3/" title=""><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2"></div></div><div class="info-2"><div class="info-item-1">本文详细介绍如何配置Redis服务，使其能够接受远程访问。首先，需要编辑redis.conf配置文件，注释掉bind127.0.0.1并设置protected-mode为no。然后，重启Redis服务。接下来，通过防火墙命令添加6379端口，使其永久开放，并重新加载防火墙规则。文章还提供了测试连接的方法以及如何移除已添加的端口。 redis服务安装好之后，默认只能本机访问，未开启守护线程服务，编辑redis.conf配置文件,我安装的版本是 1、配置文件    vim redis.conf 将 bind 127.0.0.1 注释掉 protected-node yes 设置成no 重启redis    systemctl restart redis 2、开启防火墙端口 查看防火墙状态 systemctl status firewalld 开启防火墙 systemctl start firewalld.service 关闭防火墙 systemctl stop firewalld.service 添加制定需要开放的****端口 firewall-cmd --add-port=6379...</div></div></div></a></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">哈基聪</div><div class="author-info-description"></div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">8</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95%EF%BC%9A%E9%85%8D%E7%BD%AE-OSS-%E8%B7%A8%E5%9F%9F%E8%A7%84%E5%88%99"><span class="toc-number">1.</span> <span class="toc-text">二、解决方法：配置 OSS 跨域规则</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%B7%E4%BD%93%E6%AD%A5%E9%AA%A4%EF%BC%9A"><span class="toc-number">1.1.</span> <span class="toc-text">具体步骤：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E5%85%B6%E4%BB%96%E5%8F%AF%E8%83%BD%E7%9A%84%E8%BE%85%E5%8A%A9%E8%B0%83%E6%95%B4"><span class="toc-number">2.</span> <span class="toc-text">三、其他可能的辅助调整</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">3.</span> <span class="toc-text">总结</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/03/09/%E8%A7%A3%E5%86%B3OSS%E5%89%8D%E7%AB%AF%E8%A7%86%E9%A2%91CORS%E6%8A%A5%E9%94%99/" title="无标题">无标题</a><time datetime="2026-03-09T07:54:19.956Z" title="发表于 2026-03-09 15:54:19">2026-03-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/03/09/redis%E8%BF%9C%E7%A8%8B%E8%AE%BF%E9%97%AE%E5%BC%80%E6%94%BE%E9%98%B2%E7%81%AB%E5%A2%99%E7%AB%AF%E5%8F%A3/" title="无标题">无标题</a><time datetime="2026-03-09T07:54:19.601Z" title="发表于 2026-03-09 15:54:19">2026-03-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/03/09/docker%E9%83%A8%E7%BD%B2%E9%A1%B9%E7%9B%AE%20-%20%E5%89%AF%E6%9C%AC/" title="无标题">无标题</a><time datetime="2026-03-09T07:54:18.665Z" title="发表于 2026-03-09 15:54:18">2026-03-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/03/09/docker%E9%83%A8%E7%BD%B2%E9%A1%B9%E7%9B%AE/" title="无标题">无标题</a><time datetime="2026-03-09T07:53:05.872Z" title="发表于 2026-03-09 15:53:05">2026-03-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2026/03/09/clawdbot%E5%AE%89%E8%A3%85/" title="无标题">无标题</a><time datetime="2026-03-09T07:51:27.995Z" title="发表于 2026-03-09 15:51:27">2026-03-09</time></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 - 2026 By 哈基聪</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 8.1.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.1</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.1"></script><script src="/js/main.js?v=5.5.1"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
